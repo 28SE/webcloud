@@ -1,8 +1,19 @@
-69 : unbundling Act
-       IBM vends hardward, software, service tout en un; etat lui demande de vendre séparément. Donc IBM propose le brevet & droit d'auteurs.
-70-80: micro informatique
-1983 : letter de bill gates; richard Stallman(logiciel libre est éthique)
+exemple lignes de commande:
+	$ ls /etc/ : afficher tout
+	$ ls /etc/less : afficher le début, manuellement pour la suite
+	$ ls /etc/apache2/ : chercher apache2
+	$ find . -name "*conf" : chercher le dossier nom contient conf
+	$find /etc/ -name "*conf" -type f
 
-Creation de GNU qui fonctionne  que sur les gros machines
-89-90 : un étudiant avec petit machine crée Linus lui permet d'utiliser GNU
+les dates importantes:
+	69 : unbundling Act
+       	     IBM vends hardward, software, service tout en un; etat lui demande de vendre séparément. Donc IBM propose le brevet & droit d'auteurs.
+	70-80: micro informatique
+	1983 : letter de bill gates; richard Stallman(logiciel libre est éthique)
+		Creation de GNU qui fonctionne  que sur les gros machines
+	89-90 : un étudiant avec petit machine crée Linus lui permet d'utiliser GNU
 
+pour créer un VM:
+	télécharger le ficher .iso : ubuntu-16
+	télécharger virtualbox
+	créer un système d’exploitation virtuel dans virtualbox : Linux-ubuntu 64 bits
