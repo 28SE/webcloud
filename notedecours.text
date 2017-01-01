@@ -17,3 +17,11 @@ pour créer un VM:
 	télécharger le ficher .iso : ubuntu-16
 	télécharger virtualbox
 	créer un système d’exploitation virtuel dans virtualbox : Linux-ubuntu 64 bits
+
+installer nginx sur la VM:
+	dans le terminal : 
+				$ sudo apt-get update
+				$ sudo apt-get install nginx
+				$ sudo ufw allow 'Nginx HTTP' 
+				$ sudo ufw enable : activer le statue
+				$ systemclt status nginx : voir si il est activé ou pas
