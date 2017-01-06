@@ -1,11 +1,11 @@
-exemple lignes de commande:
+* exemple lignes de commande:
 	$ ls /etc/ : afficher tout
 	$ ls /etc/less : afficher le début, manuellement pour la suite
 	$ ls /etc/apache2/ : chercher apache2
 	$ find . -name "*conf" : chercher le dossier nom contient conf
 	$find /etc/ -name "*conf" -type f
 
-les dates importantes:
+* les dates importantes:
 	69 : unbundling Act
        	     IBM vends hardward, software, service tout en un; etat lui demande de vendre séparément. Donc IBM propose le brevet & droit d'auteurs.
 	70-80: micro informatique
@@ -13,15 +13,32 @@ les dates importantes:
 		Creation de GNU qui fonctionne  que sur les gros machines
 	89-90 : un étudiant avec petit machine crée Linus lui permet d'utiliser GNU
 
-pour créer un VM:
+* pour créer un VM:
 	télécharger le ficher .iso : ubuntu-16
 	télécharger virtualbox
 	créer un système d’exploitation virtuel dans virtualbox : Linux-ubuntu 64 bits
 
-installer nginx sur la VM:
-	dans le terminal : 
+* installer nginx sur la VM:
+	dans le terminal de VM: 
 				$ sudo apt-get update
 				$ sudo apt-get install nginx
 				$ sudo ufw allow 'Nginx HTTP' 
 				$ sudo ufw enable : activer le statue
 				$ systemclt status nginx : voir si il est activé ou pas
+
+
+
+* pour obtenir ssh key, dans le terminal on écrit  $ ssh-keygen
+						    $ .ssh/id_rsa.pub
+* pour afficher notre key public : $ less .ssh/id_rsa.pub 
+
+* Digital ocean droplet, on obtient un IP après avoir ajouter notre SSH key.
+ex:178.62.59.69
+
+* Terminal : 
+		$ ssh root@ip
+		$ apt-get update
+		$ apt-get upgrade
+		$ apt-get install nginx
+* Entrer IP dans le barre de recherche d’un moteur de recherche pour vérifier.
+
