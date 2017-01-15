@@ -42,3 +42,12 @@ ex:178.62.59.69
 		$ apt-get install nginx
 * Entrer IP dans le barre de recherche d’un moteur de recherche pour vérifier.
 
+* CRON : un programme qui permet aux utilisateurs des systèmes Unix d’exécuter automatiquement des scripts, des commandes ou des logiciels à une date et une heure spécifiées à l’avance, ou selon un cycle défini à l’avance
+   - redirection des informations dans un fichier : exemple 2> fichier-2
+
+* permission de fichier sous linux : 
+	graphiquement : click droit sur un fichier, on obtient une fenêtre dont l’un des onglets est permission
+	ligne de commande : ls -1(afficher droit de fichier)
+			     sudo chown nouveaupropriétaire nomdefichier  (changer la propriétaire)
+			     sudo chgrp nouveaugroupe nomdefichier(changer le groupe)
+			     sudo chown nouveaupropriétaire : nouveaugroupe nomdefichier (changer propriétaire et groupe)
