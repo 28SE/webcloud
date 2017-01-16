@@ -47,7 +47,34 @@ ex:178.62.59.69
 
 * permission de fichier sous linux : 
 	graphiquement : click droit sur un fichier, on obtient une fenêtre dont l’un des onglets est permission
-	ligne de commande : ls -1(afficher droit de fichier)
+	ligne de commande : ls -l(afficher droit de fichier)
 			     sudo chown nouveaupropriétaire nomdefichier  (changer la propriétaire)
 			     sudo chgrp nouveaugroupe nomdefichier(changer le groupe)
 			     sudo chown nouveaupropriétaire : nouveaugroupe nomdefichier (changer propriétaire et groupe)
+
+
+* créer un ficher test.sh : nano test.sh
+* rendre exécrable : ls -l test.sh : lister la permission
+		      chmod +x test.sh :changer le mode, rendre executable
+* écrire un programme bash : dans le test.sh, on note
+ #!/bin/bash
+ echo "hello"$*
+* dans le commande, on peut executer le programme :  ./test.sh "moi" ->hello moi
+*renvoyer stdout vers noms.txt : ./test.sh "user" >> noms.txt
+ on a ajouté le nom user dans le noms.txt
+*sortir une version triée des noms: dans la commande : sort  noms.txt
+les résultats seront trier alphabétiquement
+
+*github -> deploy.sh -> #!/bin/bash
+			 tail -n +3 “$0” : afficher les 3 derniers lignes
+			 set -eu 
+# remplace xxx.xxx.xxx.xxx par le IP de droplet
+ ssh root@xxx.xxx.xxx.xxx; exit
+	
+# update the serveur : apt-get update
+# upgrade
+# install nginx : apt-get install nginx
+# send the list of process to /var/www/index.html
+ps>/var/www/index.html
+
+* # : commentaire
