@@ -1,4 +1,4 @@
-ç* exemple lignes de commande:
+* exemple lignes de commande:
 	$ ls /etc/ : afficher tout
 	$ ls /etc/less : afficher le début, manuellement pour la suite
 	$ ls /etc/apache2/ : chercher apache2
@@ -87,3 +87,6 @@ ps>/var/www/index.html
 	      git status
 	      git commit -m “ message ”
 	      git push
+
+* commande ps : donne une sortit standard
+  ps >fichier .txt
