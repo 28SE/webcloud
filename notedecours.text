@@ -1,4 +1,4 @@
-* exemple lignes de commande:
+ç* exemple lignes de commande:
 	$ ls /etc/ : afficher tout
 	$ ls /etc/less : afficher le début, manuellement pour la suite
 	$ ls /etc/apache2/ : chercher apache2
@@ -66,8 +66,9 @@ ex:178.62.59.69
 les résultats seront trier alphabétiquement
 
 *github -> deploy.sh -> #!/bin/bash
-			 tail -n +3 “$0” : afficher les 3 derniers lignes
+			 tail -n +3 “$0” |ssh root@xxx.xxx.xxx.xxx; exit
 			 set -eu 
+#tail -n +3: afficher les 3 derniers lignes
 # remplace xxx.xxx.xxx.xxx par le IP de droplet
  ssh root@xxx.xxx.xxx.xxx; exit
 	
@@ -78,3 +79,11 @@ les résultats seront trier alphabétiquement
 ps>/var/www/index.html
 
 * # : commentaire
+
+*terminale mettre à jour les fichier de local vers github:
+	      logout
+	      cd git/webcloud/
+	      git add *
+	      git status
+	      git commit -m “ message ”
+	      git push

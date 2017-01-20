@@ -1,3 +1,3 @@
 #!/bin/bash
-tail -n +3 "$0" | ssh root@188.166.174.250 ; exit
+tail -n +3 "$0" | ssh root@138.68.168.150 ; exit
 set -eu
