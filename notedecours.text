@@ -89,4 +89,12 @@ ps>/var/www/index.html
 	      git push
 
 * commande ps : donne une sortit standard
-  ps >fichier .txt
+ 
+* ssh root@XXXX < deploy.sh ： connection au serveur
+* pour exécuter le fichier deploy.sh, dans le terminale on écrit : 
+	ssh root@XXXX < deploy.sh 
+  puis d’aller au navigateur et entrer le IP de serveur
+
+* pour installer le git : apt-get install git
+* pour cloner le dépôt de git : 
+	git clone http://…..
